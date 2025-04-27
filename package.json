@@ -9,10 +9,11 @@
   "version": "1.6.0",
   "license": "MIT",
   "type": "module",
-  "scripts": {
-    "build": "tsc -build && node scripts/build-cli.js",
-    "dev": "tsx watch scripts/start-server.ts"
-  },
+ "scripts": {
+  "start": "node bin/cli.mjs",  // Uses the binary defined in "bin"
+  "build": "tsc -build && node scripts/build-cli.js",
+  "dev": "tsx watch scripts/start-server.ts"
+},
   "bin": {
     "notion-mcp-server": "bin/cli.mjs"
   },
