@@ -10,7 +10,7 @@
   "license": "MIT",
   "type": "module",
  "scripts": {
-  "start": "node bin/cli.mjs",  // Uses the binary defined in "bin"
+  "start": "node bin/cli.mjs", 
   "build": "tsc -build && node scripts/build-cli.js",
   "dev": "tsx watch scripts/start-server.ts"
 },
